@@ -1,9 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
     margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+    height: 100vh; /* 让背景充满整个页面 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    color: white; /* 让文字颜色适配暗色背景 */
+    transition: background-color 0.1s linear; /* 平滑过渡颜色 */
 }
 header {
     background: #333;
