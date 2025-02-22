@@ -1,29 +1,73 @@
+@font-face {
+    font-family: 'Huiwen';
+    src: url('fonts/huiwen.otf') format('opentype');
+}
+
 body {
     margin: 0;
     height: 100vh; /* 让背景充满整个页面 */
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Arial, sans-serif;
-    color: white; /* 让文字颜色适配暗色背景 */
+    font-family: 'Huiwen', Arial, sans-serif; /* 使用自定义字体 */
+    color: rgb(109, 56, 56); /* 让文字颜色适配暗色背景 */
+    background-color: #272727;
     transition: background-color 0.1s linear; /* 平滑过渡颜色 */
+    text-align: center; /* 让整个页面的文字居中对齐 */
 }
 header {
-    background: #333;
-    color: white;
+    background: transparent;
+    color: rgb(221, 218, 178);
     padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
+    position: absolute;
+    text-align: center;
+    top: 20px; /* 距离顶部有一定距离 */
+    font-size: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center; /* 让 header 内的文字居中对齐 */
 }
 nav a {
-    color: white;
+    background: transparent;
     text-decoration: none;
+   
     margin: 0 15px;
+    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+nav a:hover {
+    transform: scale(1.2) !important; /* 添加放大效果 */
 }
 section {
     padding: 20px;
     margin: 20px;
-    background: white;
+    background: transparent;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    /* box-shadow: 2px 2px 10px rgba(0,0,0,0.1); */
+    text-align: center; /* 让 section 内的文字居中对齐 */
+}
+#about {
+    position: absolute;
+    left: 20px; /* 调整 about section 的左外边距 */
+    top: 220px; /* 调整 about section 的顶部外边距 */
+    width: 40%; /* 设置 about section 的宽度 */
+    height: 50%; /* 设置 about section 的高度 */
+    font-size: 20px; /* 设置字体大小 */
+}
+
+#explore {
+    position:absolute;
+    right: 20px; /* 调整 projects section 的右外边距 */
+    top: 200px; /* 调整 projects section 的顶部外边距 */
+    width: 40%; /* 设置 projects section 的宽度 */
+    height: 50%; /* 设置 projects section 的高度 */
+    font-size: 20px; /* 设置字体大小 */
+    margin-top: 100px; /* 调整 projects section 的顶部外边距 */
+}
+
+#contact {
+    margin-top: 150px; /* 调整 contact section 的顶部外边距 */
 }
 footer {
     background: #333;
@@ -32,4 +76,13 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    text-align: center; /* 让 footer 内的文字居中对齐 */
+}
+
+p {
+    font-size: 20px; /* 设置字体大小 */
+    color: rgb(221, 218, 178); /* 设置文字颜色 */
+    line-height: 1.6; /* 设置行高 */
+    margin: 10px 0; /* 设置段落的上下外边距 */
+    text-align:left; /* 让段落文字居中对齐 */
 }
